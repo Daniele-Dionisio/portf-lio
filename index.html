@@ -6,60 +6,68 @@
     <title>Daniele</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
 </head>
-<body class="bg-red-800">
-    <header>
-      <h1 class=" text-x1 font-bold text-white"> Daniele Dionisio dos Santos</h1>
-      <nav>
-       <a href="#sobre" class=" text-white hover:text-red-300 ">Sobre Mim</a>
-       <a href="#habilidades" class="font-mono ">Habilidades</a>
-       <a href="#projetos">Progetos</a>
-       <a href="#formacao">Formação</a>
-       <a href="#contato">Contato</a>
+<body class="bg-gray-300">
+    <header class="bg-red-800 p-3">
+      <h1 class=" text-4xl font-extrabold text-white animate-pulse"> Daniele Dionisio dos Santos</h1>
+      <nav class="flex justify-end gap-5">
+       <a href="#sobre" class=" flex-row font-mono text-sm text-white hover:text-red-300  ">Sobre Mim</a>
+       <a href="#habilidades" class="flex-row font-mono text-sm text-white hover:text-red-300  ">Habilidades</a>
+       <a href="#projetos" class=" flex-row font-mono text-sm text-white hover:text-red-300 ">Progetos</a>
+       <a href="#formacao" class=" flex-row font-mono text-sm text-white hover:text-red-300 ">Formação</a>
+       <a href="#contato" class=" flex-row font-mono text-sm text-white hover:text-red-300 ">Contato</a>
      </nav>
     
     </header>
 
- <section id="sobre" class=" bg-gray-200 ">
-   <h1 class="  text-center text-xl font-serif ">Sobre Mim</h1>
-   <p>
-      Sou estudante do Instituto Federal de Mato Grosso do Sul (IFMS) – Campus Nova Andradina, cursando o Ensino Médio Integrado em Informática. Possuo conhecimentos em linguagens de programação como Python e JavaScript, além de domínio em HTML e CSS para desenvolvimento web. Também concluí o curso de Operador de Computador, no qual adquiri habilidades práticas no uso do sistema operacional Linux, prompt de comando e na operação geral de computadores. Tenho interesse em aprimorar meus conhecimentos na área de tecnologia e contribuir com soluções criativas e eficientes para o desenvolvimento de sistemas e aplicações.
+ <section id="sobre" class=" bg-gray-100 rounded-lg p-10">
+   <h1 class="  text-center text-3xl font-semibold text-red-500 ">Sobre Mim</h1>
+   <div class=" flex items-center gap-4">
+   <p class="font-mono text-xl">
+     -  Sou estudante do Instituto Federal de Mato Grosso do Sul (IFMS) – Campus Nova Andradina, cursando o Ensino Médio Integrado em Informática. Possuo conhecimentos em linguagens de programação como Python e JavaScript, além de domínio em HTML e CSS para desenvolvimento web. Também concluí o curso de Operador de Computador, no qual adquiri habilidades práticas no uso do sistema operacional Linux, prompt de comando e na operação geral de computadores. Tenho interesse em aprimorar meus conhecimentos na área de tecnologia e contribuir com soluções criativas e eficientes para o desenvolvimento de sistemas e aplicações.
    </p>
-    <img src="eu.jpg" alt="Foto de Daniele" class=" rounded-full border-2 border-gray-950">
+    <img src="eu.jpg" alt="Foto de Daniele" class=" rounded-full w-1/3 flex justify-end border-8 border-red-300">
+  </div>
  </section>
 
- <section id="habilidades" class="">
-   <h1 class=" ">Habilidades</h1>
-   <div class="sei">
-     <h3>Back End</h3>
-     <p>Tenho conhecimentos de back-end utilizando Node.js, conseguindo criar rotas simples, lidar com requisições e respostas, e estruturar funcionalidades básicas do servidor. Entendo os princípios fundamentais do desenvolvimento back-end e consigo implementar soluções iniciais de forma organizada e funcional.
-     </p>
-   </div>
-   <div class="sei">
-     <h3>Front-End</h3>
-     <p> Tenho habilidades iniciais em front-end, trabalhando com HTML e CSS em nível básico. Sou capaz de estruturar páginas, aplicar estilos, organizar elementos visuais e criar layouts simples, demonstrando familiaridade com a construção da interface de sites e o funcionamento dos principais componentes da web.
-     </p>
-   </div>
-   <div class="sei">
-     <h3>Python</h3>
-     <p>Tenho conhecimento em Python e sou capaz de utilizar a linguagem para resolver problemas de forma lógica e eficiente. Consigo escrever scripts simples, automatizar tarefas básicas e aplicar conceitos fundamentais de programação.</p>
-   </div>
-   <div class="sei">
-     <h3>Comunicação</h3>
-     <p>Tenho uma comunicação clara e eficiente, capaz de transmitir ideias de forma objetiva e adequada a diferentes situações. Consigo me expressar bem em conversas, explicações e trabalhos em grupo, facilitando a colaboração e o entendimento entre as pessoas.
-     </p>
-   </div>
+ <section id="habilidades" class=" p-10">
+   <h1 class=" text-red-900 text-center text-3xl font-semibold pb-6">Habilidades</h1>
+   <div class=" grid grid-cols-2 gap-4 ">
+     <article class=" w-80 h-80 bg-red-300 border-4 border-gray-100 rounded-xl p-6 mx-auto flex items-center justify-center space-x-4  flex-col py-6">
+       <h3 class=" font-semibold mb-2 ">Back End</h3>
+       <p class=" font-mono">Tenho conhecimentos de back-end utilizando Node.js, conseguindo criar rotas simples, lidar com requisições e respostas, e estruturar funcionalidades básicas do servidor. Entendo os princípios fundamentais do desenvolvimento back-end e consigo implementar soluções iniciais de forma organizada e funcional.
+       </p>
+     </article>
+     
+     <article class=" py-11 w-80 h-80 bg-red-200 border-4 border-gray-100 rounded-xl p-6 mx-auto flex items-center justify-center space-x-4  flex-col">
+       <h3 class=" font-semibold mb-2">Front-End</h3>
+       <p class="font-mono"> Tenho habilidades iniciais em front-end, trabalhando com HTML e CSS em nível básico. Sou capaz de estruturar páginas, aplicar estilos, organizar elementos visuais e criar layouts simples, demonstrando familiaridade com a construção da interface de sites e o funcionamento dos principais componentes da web.
+       </p>
+     </article>
+
+     <article class=" py-6 w-80 h-80 bg-red-200 border-4 border-gray-100 rounded-xl p-6 mx-auto flex items-center justify-center space-x-4  flex-col">
+       <h3 class=" font-semibold mb-2">Python</h3>
+       <p class="font-mono">Tenho conhecimento em Python e sou capaz de utilizar a linguagem para resolver problemas de forma lógica e eficiente. Consigo escrever scripts simples, automatizar tarefas básicas e aplicar conceitos fundamentais de programação.</p>
+     </article>
+
+     <article class=" w-80 h-80 bg-red-300 border-4 border-gray-100 rounded-xl p-6 mx-auto flex items-center justify-center space-x-4  flex-col">
+       <h3 class=" font-semibold mb-2">Comunicação</h3>
+       <p class="font-mono">Tenho uma comunicação clara e eficiente, capaz de transmitir ideias de forma objetiva e adequada a diferentes situações. Consigo me expressar bem em conversas, explicações e trabalhos em grupo,facilitando o entendimento entre as pessoas.
+       </p>
+    </article>
+    </div>
  
   </section>
 
- <section id="projetos">
-   <h1>Projetos</h1>
-   <div class="projeto">
-     <img src="site.bhaska.png" alt="imagem do site">
-     <h3>Calculadora Bhaskara</h3>
-     <p>Este site realiza automaticamente o cálculo da Fórmula de Bhaskara e foi desenvolvido para facilitar a vida de estudantes e de qualquer pessoa que utilize essa equação no dia a dia. Com ele, é possível resolver expressões de forma rápida.</p>
-     <a href="https://daniele-dionisio.github.io/Calculadora-Bhaskara/">acesse aqui</a>
-   </div>
-   <div class="projeto">
+ <section id="projetos" class=" bg-gray-100 rounded-lg p-10">
+   <h1 class=" text-red-500 text-center text-3xl font-semibold pb-5 ">Projetos</h1>
+   <div class="">
+     <article class=" w-80 h-82 bg-red-300 border-4 border-gray-100 rounded-xl p-6 mx-auto flex items-center justify-center space-x-4  flex-col">
+       <img src="site.bhaska.png" alt="imagem do site" class=" rounded-lg border-2 border-white">
+       <h3 class=" font-semibold text-center">Calculadora Bhaskara</h3>
+       <p class="font-mono ">Este site realiza automaticamente o cálculo da Fórmula de Bhaskara e foi desenvolvido para facilitar a vida de estudantes e de qualquer pessoa que utilize essa equação no dia a dia. Com ele, é possível resolver expressões de forma rápida.</p>
+       <a href="https://daniele-dionisio.github.io/Calculadora-Bhaskara/" class=" text-blue-200 hover:text-blue-800">-acesse aqui-</a>
+     </article>
+   
      <h3></h3>
    </div>
 
@@ -67,43 +75,46 @@
 
  <section id="formacao">
 
-   <h1>Formação Acadêmica</h1>
-  <div class="curso">
-    <h3>Operador de computador</h3>
-    <p> IFMS, (2025)</p>
+   <h1 class=" text-red-900 text-center text-3xl font-semibold">Formação Acadêmica</h1>
+  <div class="  flex flex-col gap-6 mx-10 my-10">
+    <article>
+      <h3 class=" font-semibold text-2xl"> ☆ Operador de computador</h3>
+     <p class=" font-mono text-xl"> - IFMS, (2025)</p>
+    </article>
+  
+    <article >
+     <h3 class=" font-semibold text-2xl"> ☆ JS,CSS e HTML</h3>
+     <p class=" font-mono text-xl"> - Fundação Bradesco, (2025)</p>
+    </article>
+  
 
-  </div>
+    <article>
+     <h3 class=" font-semibold text-2xl"> ☆ Administração</h3>
+     <p class=" font-mono text-xl">Fundação Bradesco, (2024)</p>
+   </article>
 
-  <div class="curso">
-    <h3>JS,CSS e HTML</h3>
-    <p> Fundação Bradesco, (2025)</p>
-  </div>
+   <article>
+     <h3 class=" font-semibold text-2xl"> ☆ Atendimento ao público</h3>
+     <p class=" font-mono text-xl"> - Fundação Bradesco, (2025)</p>
+   </article>
 
-  <div class="curso">
-    <h3>Administração</h3>
-    <p>Fundação Bradesco, (2024)</p>
-  </div>
-
-  <div class="curso">
-    <h3>Atendimento ao público</h3>
-    <p> Fundação Bradesco, (2025)</p>
-  </div>
-
-  <div class="curso">
-    <h3>Aluna do IFMS, ensino médio tecnico integrado em informática</h3>
-    <p>(em andamento, 2025)</p>
+   <article>
+     <h3 class=" font-semibold text-2xl"> ☆ Ensino médio tecnico integrado em informática</h3>
+     <p class=" font-mono text-xl"> - IFMS (em andamento, 2025)</p>
+    </article>
   </div>
 
  </section>
 
- <section id="contato">
+ <section id="contato" class="bg-gray-100 rounded-lg">
 
-   <p>✉️E-mail: danieledionisio34@gmail.com</p>
-   <a href="https://www.instagram.com/danieledionisio509/"> 📷Instagram: @danieledionisio509</a>
-
+  <div class=" p-10">
+   <p class=" font-mono "> 📧E-mail: danieledionisio34@gmail.com</p>
+   <a href="https://www.instagram.com/danieledionisio509/" class=" font-mono"> 📷Instagram: @danieledionisio509</a>
+ </div>
  </section>
 
-  <footer>
+  <footer class="bg-red-800 text-center text-white p-5">
     <p>© 2025 -daniele dionisio-</p>
   </footer>
 </body>
